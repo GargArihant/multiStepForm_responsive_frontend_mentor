@@ -4,7 +4,7 @@ import "./submit.css"
 function Submit() {
   return (
     <div className="success-container">
-        <img src="../../src/assets/images/icon-thank-you.svg" alt="" />
+        <img src="../../assets/images/icon-thank-you.svg" alt="" />
         <h1 style={{color: 'var(--Marine-blue)'}}>Thank you!</h1>
         <p style={{color: 'var(--Cool-gray)'}}>
   Thanks for confirming your subscription! We hope you have fun 

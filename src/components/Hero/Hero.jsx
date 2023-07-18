@@ -50,8 +50,8 @@ function Hero() {
 },[index])
   return (
     <>
-    <img className='pc' src={"../../src/assets/images/bg-sidebar-desktop.svg"} alt="" />
-    <img src="../../src/assets/images/bg-sidebar-mobile.svg" className='mob' alt="" />
+    <img className='pc' src={"../../assets/images/bg-sidebar-desktop.svg"} alt="" />
+    <img src="../../assets/images/bg-sidebar-mobile.svg" className='mob' alt="" />
     <div className="index">
       <div className="step1">
         <div className="one" ref={refOne}>1</div>

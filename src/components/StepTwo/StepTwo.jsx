@@ -26,7 +26,7 @@ const StepTwo = () => {
         <label htmlFor="Arcade" className="plan1">
         <input type="radio" id="Arcade" name="plan" {...register('plan')} value="Arcade" />
           <div className="input-container">
-                <img src="../../src/assets/images/icon-arcade.svg" alt="" /><br />
+                <img src="../../assets/images/icon-arcade.svg" alt="" /><br />
             <div className="span-box">
             <span className="span">Arcade</span>
             <span className='rate'>$9{!Yearly?'/mo':'0/yr'}</span>
@@ -38,7 +38,7 @@ const StepTwo = () => {
             <label htmlFor="Advanced" className="plan1">
             <input type="radio" id="Advanced" name="plan" {...register('plan')} value="Advanced" />
             <div className="input-container">
-            <img src="../../src/assets/images/icon-advanced.svg" alt="" /><br /> 
+            <img src="../../assets/images/icon-advanced.svg" alt="" /><br /> 
 
             <div className="span-box">
             <span className="span">Advanced</span>
@@ -50,7 +50,7 @@ const StepTwo = () => {
             <label htmlFor="Pro" className="plan1">
             <input type="radio" id="Pro" name="plan" {...register('plan')} value="Pro"/>
             <div className="input-container">
-            <img src="../../src/assets/images/icon-pro.svg" alt="" /><br />
+            <img src="../../assets/images/icon-pro.svg" alt="" /><br />
            <div className="span-box">
             <span className="span">Pro</span>
             <span className='rate'>$15{!Yearly?'/mo':'0/yr'}</span>
