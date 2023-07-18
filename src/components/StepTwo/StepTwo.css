@@ -1,0 +1,194 @@
+input[type='radio'] {
+    opacity: 0;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+}
+.form-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 180px;
+    left: 60px;
+    gap: 20px;
+}
+.input-container {
+    border: var(--Cool-gray) solid 1px;
+    width: 130px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.plan1 img {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+input[type="radio"]:checked ~ .input-container {
+    border: var(--Purplish-blue) solid 1px;
+    background-color: var(--Magnolia);
+  }
+  .span-box {
+    position: absolute;
+    left: 10px;
+    bottom: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+  .span, .offer {
+    color: var(--Marine-blue);
+  }
+  .span {
+    font-weight: 500;
+  }
+  .offer {
+    font-weight: 500;
+    font-size: 0.85rem;
+  }
+  .rate {
+    color: var(--Cool-gray);
+  }
+
+.form2-container {
+    position: relative;
+    background-color: var(--Magnolia);
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 15px;
+    margin-top: 220px;
+    margin-left: 27px;
+}
+.Monthly, .Yearly {
+    color: var(--Cool-gray);
+}
+.Monthly {
+    padding-right: 20px;
+}
+.Yearly {
+    padding-left: 20px;
+}
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 28px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--Marine-blue);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .form2-container input:checked + .slider {
+    background-color: var(--Marine-blue);
+  }
+  
+  .form2-container input:focus + .slider {
+    box-shadow: 0 0 1px var(--Marine-blue);
+  }
+  
+  .form2-container input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .btns {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+  }
+
+  .Next {
+    height: 40px;
+    width: 100px;
+    background-color: var(--Marine-blue);
+    color: white;
+    border-radius: 5px;
+  }
+  .Prev {
+    height: 40px;
+    width: 100px;
+    background-color: var(--Magnolia);
+    color: var(--Cool-gray);
+    border: none;
+  }
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+    left: 6vw;
+    top: 15vh;
+    gap: 0.5vh;
+  }
+  .input-container {
+    height: 18vw;
+        width: 70vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2vw;
+        align-items: center;
+        padding: 5vw;
+  }
+  .span-box {
+    left: 26vw;
+    top: 1vh;
+    font-size: 4vw;
+  }
+  .form2-container {
+    width: 72vw;
+    margin-top: 20vh;
+    margin-left: 6vw;
+  }
+  .btns {
+    width: 80vw;
+    margin-left: 6vw;
+  }
+}

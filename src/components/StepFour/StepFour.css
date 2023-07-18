@@ -1,0 +1,33 @@
+.bill {
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    background-color: var(--Magnolia);
+    width: 500px;
+}
+.card:nth-of-type(1) {
+    height: 85px;
+}
+ .card {
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+ }
+ .card-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ }
+
+ @media (max-width: 768px) {
+    .bill {
+        left: 6vw;
+        width: 73vw;
+    }
+    .btns {
+        margin-left: 0;
+    }
+ }

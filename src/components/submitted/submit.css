@@ -1,0 +1,32 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    align-items: center;
+    width: 500px;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+
+
+
+.success-container img {
+    width: 80px;
+    height: 80px;
+}
+.success-container p {
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .success-container {
+        width: 80vw;
+        height: 60vh;
+        border-radius: 15px;
+        margin: auto;
+        transform: translateY(-20vh);
+        background-color: var(--Alabaster);
+        box-shadow: 0 3px 3px rgba(128, 128, 171, 0.744);
+        padding: 6vw;
+    }
+}

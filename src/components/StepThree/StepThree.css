@@ -1,0 +1,87 @@
+.add-ons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 180px;
+    left: 60px;
+    gap: 20px;
+}
+
+.add-ons label {
+    height: 70px;
+    width: 500px;
+    border: var(--Cool-gray) solid 1px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.add-ons input {
+    width: 20px;
+    height: 20px;
+}
+
+.add-ons input:checked label{
+    border: var(--Marine-Blue) solid 1px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 510px;
+}
+.buttons .Next {
+    margin-right: 86px;
+    margin-bottom: 50px;
+}
+
+.centre {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 90px;
+}
+.centre-top {
+    color: hsl(213, 96%, 18%);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.centre-bottom {
+    color: var(--Cool-gray);
+    font-weight: 500;
+}
+@media (max-width: 768px) {
+    .add-ons {
+        left: 6vw;
+    }
+    .add-ons label {
+        width: 73vw;
+        padding: 3vw;
+    }
+    .add-ons label span:nth-child(3) {
+        font-size: 4vw;
+    }
+    .add-ons input {
+        width: 3vw;
+    }
+    .centre {
+        gap: 0.5vh;
+        margin-right: 0;
+        margin-left: 1vw;
+    }
+    .centre-top {
+        font-size: 3.5vw;
+    }
+    .centre-bottom {
+        font-size: 3.5vw;
+    }
+    .Prev {
+        margin-left: 6vw;
+    }
+    .buttons .Next {
+        margin-right: 6vw;
+    }
+}
